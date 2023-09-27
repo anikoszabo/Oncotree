@@ -25,7 +25,7 @@
   \item{edge.weights}{A choice of whether the observed or estimated
   edge transition probabilities should be used in the calculation
   of probabilities. See \code{\link{oncotree.fit}} for explanation
-  of the difference. By default, estimated edge transition probabilies
+  of the difference. By default, estimated edge transition probabilities
  if \code{with.errors=TRUE} and the observed ones if 
  \code{with.errors=FALSE}.}
 }
@@ -47,11 +47,12 @@
 \seealso{\code{\link{oncotree.fit}}}
 \examples{
    data(ov.cgh)
-   ov.tree <- oncotree.fit(ov.cgh)
+   ov.tree <- oncotree.fit(ov.cgh[1:5])
    
    #joint distribution
    jj <- distribution.oncotree(ov.tree, edge.weights="obs")
    head(jj)
+   # including errors - time/size exponential in number of events
    jj.eps <- distribution.oncotree(ov.tree, with.errors=TRUE)
    head(jj.eps)
   

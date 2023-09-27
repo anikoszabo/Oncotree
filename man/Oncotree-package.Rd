@@ -18,7 +18,7 @@ it along the edges of the tree. This tree
 generates observations on the presence/absence of genetic events the following
 way: each edge \emph{e} is independently retained with probability \eqn{\pi
 (e)}; the set of vertices that are still reachable from the root 
-gives the set of the observed genetic evets.
+gives the set of the observed genetic events.
 
 To describe random deviations from the pure tree model an error model
 is added. 
