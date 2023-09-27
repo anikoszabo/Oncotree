@@ -1,8 +1,8 @@
 library(devtools)
 
-ot <- as.package("z:/RForge/corrbin/pkg/Oncotree")
+ot <- as.package("../Oncotree")
 
 
-check(ot, document=FALSE, check_dir = "z:/RForge",
+check(ot, document=FALSE, check_dir = "c:/Temp",
      cran = TRUE, manual=TRUE, incoming=TRUE)
 
