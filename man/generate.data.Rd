@@ -18,7 +18,7 @@ generate.data(N, otree, with.errors=TRUE,
   \item{edge.weights}{A choice of whether the observed or estimated
   edge transition probabilities should be used in the calculation
   of probabilities. See \code{\link{oncotree.fit}} for explanation
-  of the difference. By default, estimated edge transition probabilies
+  of the difference. By default, estimated edge transition probabilities
  if \code{with.errors=TRUE} and the observed ones if 
  \code{with.errors=FALSE}.}
   \item{method}{Simulation method, see Details for explanation of the options.}
@@ -54,7 +54,7 @@ generate.data(N, otree, with.errors=TRUE,
 \seealso{\code{\link{oncotree.fit}}}
 \examples{
    data(ov.cgh)
-   ov.tree <- oncotree.fit(ov.cgh)
+   ov.tree <- oncotree.fit(ov.cgh[1:5])
    
    set.seed(7365)
    rd <- generate.data(200, ov.tree, with.errors=TRUE)

@@ -43,7 +43,7 @@ plotting the resulting set of trees.}
 \value{
   For \code{bootstrap.oncotree}: an object of class \code{boottree} with the following components:
   \item{original}{The \code{parent} component of the original tree (\code{otree}).}
-  \item{consensus}{A numeric vector with the \code{parent$parent.num} component of the consesus tree - this defines the tree structure uniquely.}
+  \item{consensus}{A numeric vector with the \code{parent$parent.num} component of the consensus tree - this defines the tree structure uniquely.}
   \item{parent.freq}{A matrix giving the number of trees with each possible child-parent edge. The rows correspond to children while the column to parents.}
 	\item{tree.list}{A data frame with each row representing a unique tree obtained during the bootstrap.  The \sQuote{Tree} variable contains the \code{parent$parent.num} component of the tree (each pasted into one dot-separated string), while the \sQuote{Freq} variable gives the frequency of the tree among the R bootstrap replicates.}
   \item{type}{A character value with the type of the bootstrap performed.}
@@ -58,7 +58,7 @@ For \code{plot.oncotree}:
 \seealso{\code{\link{oncotree.fit}}}
 \examples{
    data(ov.cgh)
-   ov.tree <- oncotree.fit(ov.cgh)
+   ov.tree <- oncotree.fit(ov.cgh[1:5])
    set.seed(43636)
    ov.b1 <- bootstrap.oncotree(ov.tree, R=100, type="parametric")
    ov.b1

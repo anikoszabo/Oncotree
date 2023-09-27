@@ -116,7 +116,7 @@ joint distributions (2- or higher way) if needed (the plot is shown in Figure~\r
 \end{figure} 
 
 Another way to evaluate goodness-of-fit is through bootstrap resampling of the
-data. Two approaches are implemented: a paramteric bootstrap that assumes that 
+data. Two approaches are implemented: a parametric bootstrap that assumes that 
 the model is correct and a non-parametric bootstrap. The plot is shown in Figure~\ref{F:boot}.
 
 <<BootNP>>=

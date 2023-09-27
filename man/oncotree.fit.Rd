@@ -63,7 +63,7 @@ For \code{oncotree.fit}:
   \item{child}{a character vector of the event names starting with \sQuote{Root}}
   \item{parent}{a character vector of the names of the parents of \code{child}}
   \item{parent.num}{a numeric vector with column indices corresponding to \code{parent}}
-  \item{obs.weights}{raw edge transition probabilites P(child|parent)}
+  \item{obs.weights}{raw edge transition probabilities P(child|parent)}
   \item{est.weights}{edge transition probabilities adjusted for the error rates \code{eps}}}}
 \item{level}{a numeric vector of the depth of each node in the tree (1 for the root, 2 for its children, etc.)}
 \item{numchild}{a numeric vector giving the number of children for each node}
